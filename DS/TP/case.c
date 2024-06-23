@@ -149,6 +149,7 @@ int main() {
                     break;
                 }
                 push(&head, id, name, birthPlace, birthDate, position);
+                printf("\nData karyawan dengan id:%d berhasil ditambahkan\n", id);
                 break;
             case 2:
                 display(head);
@@ -157,12 +158,15 @@ int main() {
                 printf("Masukkan ID yang akan dihapus: ");
                 scanf("%d", &id);
                 deleteById(&head, id);
+                printf("\nData karyawan dengan id:%d berhasil dihapus \n", id);
                 break;
             case 4:
                 deleteAll(&head);
+                printf("\nData semua karyawan berhasil dihapus\n");
                 break;
             case 5:
                 deleteAll(&head);
+                printf("\nTerima Kasih telah menggunakan program");
                 exit(0);
             default:
                 printf("Pilihan tidak valid.\n");
